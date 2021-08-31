@@ -9,7 +9,18 @@ const deixarAmarelo = () => semaforo.src = "img/amarelo.png"
 
 const deixarVerde = () => semaforo.src = "img/verde.png"
 
-
+function automatico() {
+    deixarVermelho()
+    setTimeout(() => {
+        deixarAmarelo()
+        setTimeout(() => {
+             deixarVerde()
+           setTimeout(() => {
+              automatico() 
+           }, 700); 
+        }, 700);
+    }, 700);
+}
 
 // Eventos
 
