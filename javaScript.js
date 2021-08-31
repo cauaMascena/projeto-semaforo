@@ -9,13 +9,7 @@ const deixarAmarelo = () => semaforo.src = "img/amarelo.png"
 
 const deixarVerde = () => semaforo.src = "img/verde.png"
 
-function automatico() {
-    while (idInterval) {
-        semaforo.src = "img/vermelho.png"
-        semaforo.src = "img/amarelo.png"
-        semaforo.src = "img/verde.png"
-    }
-}
+
 
 // Eventos
 
